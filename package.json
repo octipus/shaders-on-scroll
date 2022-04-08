@@ -2,10 +2,9 @@
   "name": "shaders-on-scroll",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/index.html",
   "scripts": {
     "start": "parcel src/index.html --open",
-    "clean": "rm -rf dist/*",
+    "clean": "rd /s /q dist",
     "build:parcel": "parcel build src/index.html --no-content-hash --no-source-maps --public-url ./",
     "build": "npm run clean && npm run build:parcel"
   },
@@ -17,6 +16,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@parcel/transformer-glsl": "^2.4.1",
+    "@parcel/transformer-sass": "^2.4.1",
     "parcel": "latest"
   },
   "dependencies": {

@@ -126,7 +126,7 @@ class ScrollStage {
    * OBJECT
    */
   addMesh() {
-    this.geometry = new THREE.IcosahedronGeometry(1, 64)
+    this.geometry = new THREE.IcosahedronGeometry(1, 25)
     
     this.material = new THREE.ShaderMaterial({
       wireframe: true,
@@ -264,5 +264,3 @@ class ScrollStage {
 }
 
 new ScrollStage()
-
-console.log('%c Made by ꜰᴀʙᴏᴏʟᴇᴀ → https://twitter.com/faboolea', 'background: black; color: white; padding: 1ch 2ch; border-radius: 2rem;')
